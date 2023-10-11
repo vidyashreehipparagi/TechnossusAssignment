@@ -1,0 +1,106 @@
+﻿@model IEnumerable<TechnossusAssignment.Models.Student>
+
+@{
+    ViewData["Title"] = "Student List";
+}
+
+
+
+
+@using (Html.BeginForm("Index", "Student", FormMethod.Get))
+{
+    <div class="form-group" >
+        <h4>  @Html.Label("Search by Date:")</h4>
+        @Html.TextBox("registrationDate", null, new { @class = "form-control", @type = "date" })
+    </div><br />
+    <div class="form-group">
+        <h4> @Html.Label("Search by student name and home city:")</h4>
+        @Html.TextBox("searchString", null, new { @class = "form-control",placeholder="search by name and home city" })
+    </div><br />
+    <button type="submit" class="btn btn-primary">Search</button>
+    <a href="/Student/Index" class="btn showAll">Show all students</a>
+    <br />
+
+}
+<hr/>
+    <form asp-action="Create">
+        <button type="submit" class="btn btn-secondary">Add student</button>
+    </form>
+    <br />
+
+
+
+<table class="studentlist">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Student_Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StudentName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FatherName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MotherName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Age)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HomeAddress)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RegistrationDate)
+            </th>
+            @*  <th>
+            @Html.DisplayNameFor(model => model.IsActive)
+            </th>*@
+            <th></th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Student_Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.StudentName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FatherName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MotherName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Age)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.HomeAddress)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.RegistrationDate)
+                </td>
+                @*   <td>
+            @Html.DisplayFor(modelItem => item.IsActive)
+            </td>*@
+                <td>
+
+
+                    @Html.ActionLink("Edit", "Edit", new { id = item.Student_Id }, new { @class = "btn btn-warning" })
+                    @Html.ActionLink("Details", "Details", new { id = item.Student_Id }, new { @class = "btn btn-info" })
+                    @Html.ActionLink("Delete", "Delete", new { id = item.Student_Id }, new { @class = "btn btn-danger" })
+
+              </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+

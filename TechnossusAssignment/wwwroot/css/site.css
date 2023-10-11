@@ -1,0 +1,112 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+    font-weight:400;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+  background-color:#eaa3d9a6;
+}
+
+.studentlist {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    border: 1px solid black;
+}
+ .studentlist th {
+       text-align: left;
+        padding: 10px;
+        border: 1px solid black;
+ }
+
+    .studentlist thead {
+        background-color: #a143af;
+        text-align: left;
+        padding: 10px;
+        color: black;
+        font-weight:400;
+    }
+
+.studentlist td {
+        border: 1px solid black;
+        padding: 10px;
+}
+
+
+.studentlist tbody tr:hover {
+    background-color: #ddd;
+}
+.form-control{
+    width:30%;
+}
+.btn:hover{
+    background-color:blueviolet;
+    height:42px;
+    border:none;
+}
+.addStudent {
+    margin-left: 200px;
+    padding-left: 100px;
+    background-image: url(/Images/Create.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: antiquewhite;
+}
+.edit {
+    background-color: blueviolet;
+    border: 1px solid black;
+    padding-left: 150px;
+    padding-top:30px;
+    font-weight: 700;
+    width: 80%;
+    margin-left: 110px;
+}
+.delete {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width:70%;
+    margin-left:200px;
+    height:380px;
+    padding-top:35px;
+    padding-left:80px;
+}
+.showAll{
+    background-color:#a175db;
+    color:black;
+    font-weight:500;
+}
+nav {
+    background-color: #a143af;
+    color: black;
+    font-weight: 500;
+}
+.technossus{
+    color:black;
+}
+.details {
+    background-color:#b395de;
+    padding: 40px;
+    border: 1px solid #ddd;
+    width:70%;
+    margin-left:180px;
+}
+.welcome{
+    height:600px;
+    width:1200px;
+}

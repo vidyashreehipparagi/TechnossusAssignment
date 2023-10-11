@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechnossusAssignment", "TechnossusAssignment\TechnossusAssignment.csproj", "{B627C3A5-6358-4944-A8F4-F3948D6C110D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B627C3A5-6358-4944-A8F4-F3948D6C110D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B627C3A5-6358-4944-A8F4-F3948D6C110D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B627C3A5-6358-4944-A8F4-F3948D6C110D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B627C3A5-6358-4944-A8F4-F3948D6C110D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C2C45D02-8288-4D33-A73C-8564CA5471D5}
+	EndGlobalSection
+EndGlobal
